@@ -1,0 +1,29 @@
+{
+  "name": "osric",
+  "title": "Osric",
+  "description": "The Osric system for FoundryVTT!",
+  "version": "1.0.4",
+  "minimumCoreVersion": "0.7.5",
+  "compatibleCoreVersion": "0.7.9",
+  "templateVersion": 2,
+  "author": "Matt Hoadley",
+  "esmodules": ["module/osric.js"],
+  "styles": ["css/osric.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}
