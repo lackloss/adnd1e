@@ -2,12 +2,12 @@
  * Extend the basic ItemSheet with some very simple modifications
  * @extends {ItemSheet}
  */
-export class OsricItemSheet extends ItemSheet {
+export class Adnd1eItemSheet extends ItemSheet {
 
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["osric", "sheet", "item"],
+      classes: ["adnd1e", "sheet", "item"],
       width: 520,
       height: 480,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
@@ -16,7 +16,7 @@ export class OsricItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/osric/templates/item";
+    const path = "systems/adnd1e/templates/item";
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.html`;
 

@@ -2,13 +2,13 @@
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class OsricActorSheet extends ActorSheet {
+export class Adnd1eActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["osric", "sheet", "actor"],
-      template: "systems/osric/templates/actor/actor-sheet.html",
+      classes: ["adnd1e", "sheet", "actor"],
+      template: "systems/adnd1e/templates/actor/actor-sheet.html",
       width: 600,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]

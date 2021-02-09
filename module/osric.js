@@ -1,14 +1,14 @@
 // Import Modules
-import { OsricActor } from "./actor/actor.js";
-import { OsricActorSheet } from "./actor/actor-sheet.js";
-import { OsricItem } from "./item/item.js";
-import { OsricItemSheet } from "./item/item-sheet.js";
+import { Adnd1eActor } from "./actor/actor.js";
+import { Adnd1eActorSheet } from "./actor/actor-sheet.js";
+import { Adnd1eItem } from "./item/item.js";
+import { Adnd1eItemSheet } from "./item/item-sheet.js";
 
 Hooks.once('init', async function() {
 
-  game.osric = {
-    OsricActor,
-    OsricItem,
+  game.adnd1e = {
+    Adnd1eActor,
+    Adnd1eItem,
     rollItemMacro
   };
 
@@ -22,14 +22,14 @@ Hooks.once('init', async function() {
   };
 
   // Define custom Entity classes
-  CONFIG.Actor.entityClass = OsricActor;
-  CONFIG.Item.entityClass = OsricItem;
+  CONFIG.Actor.entityClass = Adnd1eActor;
+  CONFIG.Item.entityClass = Adnd1eItem;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("osric", OsricActorSheet, { makeDefault: true });
+  Actors.registerSheet("adnd1e", Adnd1eActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("osric", OsricItemSheet, { makeDefault: true });
+  Items.registerSheet("adnd1e", Adnd1eItemSheet, { makeDefault: true });
 
   // If you need to add Handlebars helpers, here are a few useful examples:
   Handlebars.registerHelper('concat', function() {
@@ -49,7 +49,7 @@ Hooks.once('init', async function() {
 
 Hooks.once("ready", async function() {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
-  Hooks.on("hotbarDrop", (bar, data, slot) => createOsricMacro(data, slot));
+  Hooks.on("hotbarDrop", (bar, data, slot) => createAdnd1eMacro(data, slot));
 });
 
 /* -------------------------------------------- */
@@ -63,13 +63,13 @@ Hooks.once("ready", async function() {
  * @param {number} slot     The hotbar slot to use
  * @returns {Promise}
  */
-async function createOsricMacro(data, slot) {
+async function createAdnd1eMacro(data, slot) {
   if (data.type !== "Item") return;
   if (!("data" in data)) return ui.notifications.warn("You can only create macro buttons for owned Items");
   const item = data.data;
 
   // Create the macro command
-  const command = `game.osric.rollItemMacro("${item.name}");`;
+  const command = `game.adnd1e.rollItemMacro("${item.name}");`;
   let macro = game.macros.entities.find(m => (m.name === item.name) && (m.command === command));
   if (!macro) {
     macro = await Macro.create({
@@ -77,7 +77,7 @@ async function createOsricMacro(data, slot) {
       type: "script",
       img: item.img,
       command: command,
-      flags: { "osric.itemMacro": true }
+      flags: { "adnd1e.itemMacro": true }
     });
   }
   game.user.assignHotbarMacro(macro, slot);

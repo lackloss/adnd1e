@@ -1,10 +1,10 @@
-# Osric System
+# adnd1e System
 
-This system is a osric system that you can use as a starting point for building your own custom systems. It's similar to Simple World-building, but has examples of creating attributes in code rather than dynamically through the UI.
+This system is a adnd1e system that you can use as a starting point for building your own custom systems. It's similar to Simple World-building, but has examples of creating attributes in code rather than dynamically through the UI.
 
 ## Usage
 
-Before installing this system, you should rename any files that have `osric` in their filename to use whatever machine-safe name your system needs, such as `adnd2e` if you were building a system for 2nd edition Advanced Dungeons & Dragons. In addition, you should search through the files for `osric` and `Osric` and do the same for those, replacing them with appropriate names for your system.
+Before installing this system, you should rename any files that have `adnd1e` in their filename to use whatever machine-safe name your system needs, such as `adnd2e` if you were building a system for 2nd edition Advanced Dungeons & Dragons. In addition, you should search through the files for `adnd1e` and `adnd1e` and do the same for those, replacing them with appropriate names for your system.
 
 ## Sheet Layout
 
@@ -24,4 +24,4 @@ This system includes a handful of helper CSS classes to help you lay out your sh
 
 This repo includes both CSS for the theme and SCSS source files. If you're new to CSS, it's probably easier to just work in those files directly and delete the SCSS directory. If you're interested in using a CSS preprocessor to add support for nesting, variables, and more, you can run `npm install` in this directory to install the dependencies for the scss compiler. After that, just run `npm run gulp` to compile the SCSS and start a process that watches for new changes.
 
-![image](http://mattsmith.in/images/osric.png)
+![image](http://mattsmith.in/images/adnd1e.png)

@@ -1,7 +1,7 @@
 {
-  "name": "osric",
+  "name": "adnd1e",
   "version": "1.0.0",
-  "description": "CSS compiler for the Osric system",
+  "description": "CSS compiler for the Ad&d 1e system",
   "scripts": {
     "build": "gulp",
     "compile": "gulp css",
