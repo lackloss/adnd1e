@@ -1,5 +1,43 @@
 {
-  "Actor":{
-  },
-  "Item":{}
+  "Actor":{},
+  "Item":{
+    "types": [
+      "weapon",
+      "armor",
+      "consumable",
+      "gear"
+    ],
+    "templates": {
+      "itemDescription": {
+        "description": ""
+      },
+      "carried":{
+        "location": "",
+        "weight": 0
+      }
+    },
+    "weapon": {
+      "templates":["itemDescription","carried"],
+      "ranged": false,
+      "range": 0,
+      "ROF": 0,
+      "damageSM": 0,
+      "damageL": 0,
+      "bonus": 0
+    },
+    "armor": {
+      "templates":["itemDescription","carried"],
+      "baseAC": 10,
+      "bonus": 0,
+      "maxMove": 120
+    },
+    "consumable": {
+      "templates":["itemDescription","carried"],
+      "quantity": 0
+    },
+    "gear": {
+      "templates":["itemDescription","carried"],
+      "quantity": 0
+    }
+  }
 }

@@ -3,7 +3,7 @@
   "title": "Advanced Dungeons and Dragons 1st Edition",
   "desc": "Simple system for running AD&D 1st edition",
   "author": "Matt Hoadley",
-  "version": 0.01,
+  "version": 0.02,
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
   "esmodules": [
@@ -16,6 +16,11 @@
 
   ],
   "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
 
   ],
   "gridDistance": 5,

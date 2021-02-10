@@ -1,0 +1,40 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "adnd1e.item.ranged"}}</th>
+                <th>{{localize "adnd1e.item.range"}}</th>
+                <th>{{localize "adnd1e.item.ROF"}}</th>
+                <th>{{localize "adnd1e.item.damageSM"}}</th>
+                <th>{{localize "adnd1e.item.damageL"}}</th>
+                <th>{{localize "adnd1e.item.weight"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="data.ranged" type="checkbox" value="{{checked data.ranged}}"/>
+                </td>
+                <td>
+                    <input name="data.range" type="text" value="{{data.range}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.ROF" type="text" value="{{data.ROF}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.damageSM" type="text" value="{{data.damageSM}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.damageL" type="text" value="{{data.damageL}}" data-dtype="Number"/>
+                </td>
+                <td>
+                    <input name="data.weight" type="text" value="{{data.weight}}" data-dtype="Number"/>
+                </td>
+            </tr>
+        </table>
+        <textarea name="data.description">{{data.description}}</textarea>
+    </div>
+
+</form>

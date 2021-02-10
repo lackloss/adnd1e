@@ -1,0 +1,30 @@
+{
+  "adnd1e": {
+    "class": {
+      "none": "",
+      "fighter": "Fighter",
+      "ranger": "Ranger",
+      "paladin": "Paladin",
+      "thief": "Thief",
+      "cleric": "Cleric",
+      "druid": "Druid",
+      "assassin": "Assassin",
+      "mage": "Mage",
+      "illusionist": "Illusionist"
+    },
+    "item": {
+      "itemDescription": "Description",
+      "location": "Location",
+      "weight": "Weight",
+      "ranged": "Ranged?",
+      "range": "Range",
+      "ROF": "Rate of Fire",
+      "damageSM": "Damage to Small/Med",
+      "damageL": "Damage to Large",
+      "bonus": "Bonus",
+      "baseAC": "Base AC",
+      "maxMove": "Max movement",
+      "quantity": "Quantity"
+    }
+  }
+}
