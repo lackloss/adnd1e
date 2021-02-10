@@ -1,0 +1,27 @@
+{
+  "name": "adnd1e",
+  "title": "Advanced Dungeons and Dragons 1st Edition",
+  "desc": "Simple system for running AD&D 1st edition",
+  "author": "Matt Hoadley",
+  "version": 0.01,
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.7.9",
+  "esmodules": [
+    "adnd1e.js"
+  ],
+  "styles":[
+    "adnd1e.css"
+  ],
+  "packs": [
+
+  ],
+  "languages": [
+
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "hp",
+  "initiative": "1d6"
+
+
+}
